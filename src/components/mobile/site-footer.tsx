@@ -97,7 +97,9 @@ export function SiteFooter() {
           {instagram.locations} · M.P. {doctoralia.license}
         </p>
         <div className="mt-8 flex flex-col items-center gap-4 border-t border-line pt-6 md:flex-row md:justify-between">
-          <p className="text-[0.6875rem] text-muted/70">© {site.nameFull}</p>
+          <p className="text-[0.6875rem] leading-relaxed text-muted/70">
+            © 2026 {site.nameFull}. Todos los derechos reservados.
+          </p>
           <p className="inline-flex items-center gap-2.5 text-xs text-white/65">
             <Image
               src="/images/logo-dev/logo-dev.webp"
