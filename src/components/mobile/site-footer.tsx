@@ -11,6 +11,12 @@ const links = [
 
 const socials = [
   {
+    href: site.facebook,
+    label: "Facebook",
+    bg: "bg-[#1877f2]",
+    path: "M13.5 12.5h2.75l.43-2.81H13.5V8.28c0-.81.22-1.36 1.38-1.36h1.5V4.46c-.26-.04-1.16-.11-2.2-.11-2.18 0-3.67 1.33-3.67 3.77v2.07H7.5v2.81h3.01v6.75h2.99v-6.75Z",
+  },
+  {
     href: site.linkedin,
     label: "LinkedIn",
     bg: "bg-[#0a66c2]",

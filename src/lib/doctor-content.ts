@@ -13,7 +13,7 @@ export const instagram = {
   hashtags: "#rinoplastia #rinopatagonia",
   locations: "Bariloche, Cipolletti y Esquel",
   turnos: "Turnos",
-  phoneDisplay: "(294) 4430977",
+  phoneDisplay: "(294) 465-9055",
   url: "https://www.instagram.com/dr_masoero_pablo_rinoplastia/",
 } as const;
 

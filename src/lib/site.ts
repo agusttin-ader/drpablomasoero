@@ -8,11 +8,13 @@ export const site = {
   intro: `${instagram.degree}. ${instagram.locations}.`,
   instagram: instagram.url,
   email: "drpablomasoero@gmail.com",
-  phone: "+54 294 443-0977",
-  phoneHref: "tel:+542944430977",
+  phone: "+54 294 465-9055",
+  phoneHref: "tel:+542944659055",
   address: `${doctoralia.clinic} — ${doctoralia.addressLine}`,
-  whatsapp: "https://wa.me/542944430977",
-  linkedin: "https://www.linkedin.com/",
+  whatsapp: "https://wa.me/542944659055",
+  linkedin: "https://www.linkedin.com/in/pablo-masoero-960305160/",
+  facebook:
+    "https://www.facebook.com/people/Dr-Masoero-Pablo/100063579576081/",
 } as const;
 
 export const navLinks = [
