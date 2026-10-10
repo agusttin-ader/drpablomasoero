@@ -35,15 +35,20 @@ export function Hero() {
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 2.2, ease }}
         >
-          <div className="relative h-full w-full">
-            <Image
-              src={images.heroCircuit}
-              alt=""
-              fill
-              priority
-              className="object-cover object-[center_38%] opacity-[0.55] saturate-[0.85] md:object-[center_42%] md:opacity-50"
-              sizes="100vw"
-            />
+          <div className="relative h-full w-full bg-canvas">
+            <picture className="absolute inset-0 block h-full w-full">
+              <source type="image/webp" srcSet={images.heroCircuit.srcSet} sizes="100vw" />
+              <img
+                src={images.heroCircuit.fallback}
+                alt=""
+                width={1920}
+                height={1280}
+                decoding="async"
+                fetchPriority="high"
+                className="h-full w-full object-cover object-[center_38%] opacity-[0.55] saturate-[0.85] md:object-[center_42%] md:opacity-50"
+                sizes="100vw"
+              />
+            </picture>
           </div>
         </motion.div>
         <div

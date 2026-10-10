@@ -1,6 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Outfit } from "next/font/google";
-import { site } from "@/lib/site";
+import { images, site } from "@/lib/site";
 import "./globals.css";
 
 const display = Outfit({
@@ -28,6 +28,16 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="es" className={`${display.variable} ${body.variable} h-full`}>
+      <head>
+        <link
+          rel="preload"
+          as="image"
+          type="image/webp"
+          href={images.heroCircuit.fallback}
+          imageSrcSet={images.heroCircuit.srcSet}
+          imageSizes="100vw"
+        />
+      </head>
       <body className="min-h-full overflow-x-hidden bg-canvas text-ink antialiased">{children}</body>
     </html>
   );

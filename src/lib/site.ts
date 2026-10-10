@@ -29,7 +29,12 @@ export const images = {
   logoMark: "/images/logo/masoero-trasnaprente.png",
   portrait: "/images/about/About.png",
   hero: "/images/hero/hero-01.jpg",
-  heroCircuit: "/images/hero/circuito-chico.jpg",
+  /** Hero — WebP estáticos (sin /_next/image). */
+  heroCircuit: {
+    fallback: "/images/hero/circuito-chico-1920.webp",
+    srcSet:
+      "/images/hero/circuito-chico-1280.webp 1280w, /images/hero/circuito-chico-1920.webp 1920w, /images/hero/circuito-chico-2560.webp 2560w",
+  },
   gallery: [
     "/images/gallery/despues1.png",
     "/images/gallery/despues2.png",
