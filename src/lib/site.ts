@@ -27,6 +27,7 @@ export const images = {
   logoMark: "/images/logo/masoero-trasnaprente.png",
   portrait: "/images/about/About.png",
   hero: "/images/hero/hero-01.jpg",
+  heroCircuit: "/images/hero/circuito-chico.jpg",
   gallery: [
     "/images/gallery/despues1.png",
     "/images/gallery/despues2.png",

@@ -4,7 +4,6 @@ import Image from "next/image";
 import { MotionConfig, motion, useScroll, useTransform } from "framer-motion";
 import { instagram } from "@/lib/doctor-content";
 import { images, site } from "@/lib/site";
-import { Placeholder } from "./placeholder";
 
 const ease = [0.16, 1, 0.3, 1] as const;
 
@@ -32,13 +31,26 @@ export function Hero() {
       <section id="m-inicio" className="relative flex min-h-[100svh] flex-col overflow-hidden">
         <motion.div
           className="absolute inset-0"
-          initial={{ scale: 1.15, opacity: 0 }}
+          initial={{ scale: 1.08, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 2.2, ease }}
         >
-          <Placeholder className="h-full w-full" label="" />
+          <div className="relative h-full w-full">
+            <Image
+              src={images.heroCircuit}
+              alt=""
+              fill
+              priority
+              className="object-cover object-[center_38%] opacity-[0.55] saturate-[0.85] md:object-[center_42%] md:opacity-50"
+              sizes="100vw"
+            />
+          </div>
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-b from-canvas/30 via-transparent via-40% to-canvas" />
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-[radial-gradient(ellipse_90%_70%_at_50%_38%,transparent_0%,color-mix(in_srgb,var(--color-canvas)_55%,transparent)_55%,var(--color-canvas)_100%)]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-canvas/25 via-transparent via-45% to-canvas" />
 
         <div className="relative flex flex-1 items-center justify-center px-10 pt-[env(safe-area-inset-top)] md:pt-12">
           <motion.div
