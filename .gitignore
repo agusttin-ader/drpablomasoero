@@ -21,6 +21,7 @@
 /build
 
 # misc
+.venv-ig/
 .DS_Store
 *.pem
 
