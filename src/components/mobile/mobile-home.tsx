@@ -93,7 +93,6 @@ export function MobileHome() {
                   src={slide.src}
                   alt={slide.alt}
                   fill
-                  unoptimized
                   className="object-cover object-center"
                   sizes="(max-width: 768px) 88vw, 33vw"
                 />

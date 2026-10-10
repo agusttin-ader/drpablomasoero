@@ -38,7 +38,7 @@ export function MaskText({
 export function ImageReveal({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
   return (
     <motion.div
-      className={`overflow-hidden ${className}`}
+      className={`overflow-hidden bg-canvas-soft ${className}`}
       initial={{ clipPath: "inset(18% 18% 18% 18% round 2rem)", opacity: 0 }}
       whileInView={{ clipPath: "inset(0% 0% 0% 0% round 0rem)", opacity: 1 }}
       viewport={viewport}
@@ -63,8 +63,8 @@ const container: Variants = {
 };
 
 const item: Variants = {
-  hidden: { opacity: 0, y: 16, scale: 0.94, filter: "blur(6px)" },
-  show: { opacity: 1, y: 0, scale: 1, filter: "blur(0px)", transition: { duration: 0.9, ease } },
+  hidden: { opacity: 0, y: 16, scale: 0.94 },
+  show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.9, ease } },
 };
 
 export function Stagger({ children, className = "" }: { children: React.ReactNode; className?: string }) {
