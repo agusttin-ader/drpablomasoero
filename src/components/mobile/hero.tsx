@@ -86,15 +86,17 @@ export function Hero() {
           className={`${wrap} relative pb-32 text-center md:pb-36 md:text-left lg:flex lg:items-end lg:justify-between lg:gap-12`}
         >
           <div>
-            <h1 className="overflow-hidden pb-1 font-hero text-[2.6rem] leading-[1.02] text-ink md:text-[clamp(3.5rem,7vw,6.5rem)]">
-              <motion.span
-                className="block"
-                initial={{ y: "110%" }}
-                animate={{ y: "0%" }}
-                transition={{ duration: 1.3, delay: 0.9, ease }}
-              >
-                {site.name}
-              </motion.span>
+            <h1 className="font-hero text-[2.6rem] leading-[1.08] text-ink md:text-[clamp(3.5rem,7vw,6.5rem)]">
+              <span className="block overflow-hidden pb-[0.1em] pr-[0.06em]">
+                <motion.span
+                  className="block"
+                  initial={{ y: "110%" }}
+                  animate={{ y: "0%" }}
+                  transition={{ duration: 1.3, delay: 0.9, ease }}
+                >
+                  {site.name}
+                </motion.span>
+              </span>
             </h1>
             <motion.p
               className="mt-3 text-[0.6875rem] font-medium uppercase text-muted md:text-[0.75rem]"
